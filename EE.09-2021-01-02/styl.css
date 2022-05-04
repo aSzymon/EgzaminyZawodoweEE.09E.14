@@ -1,0 +1,19 @@
+#baner {
+	color: white;
+	text-align: center;
+	height: 370px;
+}
+
+#mecze{
+	color: white;
+	text-align: center;
+	width: 200px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+
+}
+
+#mecze:hover {
+	border: 1px solid white;
+}
