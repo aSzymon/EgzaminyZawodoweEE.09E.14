@@ -19,8 +19,30 @@ $conn = new PDO("mysql:host=Localhost;dbname=egzamin","root");
 		<img src="obraz1.jpg" alt="boisko">
 
 	</section>
+ 
 
-	<section id="mecze"> skrypt </section>
+		<?php 
+
+			$query1 = "SELECT zespol1, zespol2, wynik, data_rozgrywki
+			FROM rozgrywka
+			WHERE zespol1 = 'EVG'";
+
+			$sql1 = $conn->query($query1);
+
+			while($row1=$sql1->fetch(PDO::FETCH_OBJ)){
+			
+				echo "<section id='mecze'>";
+
+					echo "<h3>".$row1->zespol1." - ".$row1->zespol2."</h3>";
+					echo "<h3>".$row1->wynik."</h3>";
+					echo "<p>w dniu: ".$row1->data_rozgrywki."</p>";
+				
+				echo "</section>";
+
+			}
+
+		 ?>
+
 
 	<section id="glowny">
 		
@@ -39,7 +61,28 @@ $conn = new PDO("mysql:host=Localhost;dbname=egzamin","root");
 
 		</form>
 
-		<ul> skrypt </ul>
+		<ul> 
+
+			<?php 
+
+			if(!empty($_POST['numer'])) {
+
+				$query2 = "SELECT imie, nazwisko 
+				FROM zawodnik
+				WHERE id =".$_POST["numer"]."";
+
+				$sql2 = $conn -> query($query2);
+
+				while($row2=$sql2->fetch(PDO::FETCH_OBJ)){
+
+					echo "<li>".$row2->imie." ".$row2->nazwisko."</li>";
+
+				}
+			}
+
+			?>
+
+		</ul>
 
 	</section>
 

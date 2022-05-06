@@ -11,7 +11,7 @@
 	margin: 10px;
 	border: 1px solid black;
 	border-radius: 10px;
-
+	float: left;
 }
 
 #mecze:hover {
@@ -21,6 +21,7 @@
 #glowny {
 	background-color: WhiteSmoke;
 	height: 50px;
+	clear: both;
 }
 
 #lewy{
