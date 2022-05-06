@@ -17,3 +17,35 @@
 #mecze:hover {
 	border: 1px solid white;
 }
+
+#glowny {
+	background-color: WhiteSmoke;
+	height: 50px;
+}
+
+#lewy{
+	background-color: whiteSmoke;
+	width: 70%;
+	height: 230px;
+	float: left;
+}
+
+#prawy{
+	background-color: whiteSmoke;
+	width: 30%;
+	height: 230px;
+	text-align: right;
+	float: right;
+}
+
+body {
+	font-family: Tahoma;
+	background-color: Crimson;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 7px;
+	text-transform: capitalize;
+
+}

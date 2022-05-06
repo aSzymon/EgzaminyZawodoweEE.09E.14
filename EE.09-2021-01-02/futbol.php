@@ -1,3 +1,9 @@
+<?php 
+
+$conn = new PDO("mysql:host=Localhost;dbname=egzamin","root");
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +20,7 @@
 
 	</section>
 
-	<section id="mecze"></section>
+	<section id="mecze"> skrypt </section>
 
 	<section id="glowny">
 		
@@ -29,11 +35,11 @@
 		<form method="POST" action="#">
 			
 			<input type="number" name="numer">
-			<input type="button" value="Sprawdź">
+			<input type="submit" value="Sprawdź">
 
 		</form>
 
-		<ul></ul>
+		<ul> skrypt </ul>
 
 	</section>
 
@@ -46,3 +52,9 @@
 
 </body>
 </html>
+
+<?php 
+
+$conn = null;
+
+ ?>
