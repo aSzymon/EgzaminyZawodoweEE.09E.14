@@ -1,0 +1,22 @@
+-- kw 1
+
+SELECT imie,nazwisko
+FROM zawodnik
+WHERE id = 4;
+
+-- kw2
+
+SELECT zespol, punkty, grupa
+FROM liga
+ORDER BY punkty DESC;
+
+-- kw3
+
+SELECT zawodnik.id,zawodnik.nazwisko, pozycja.nazwa
+FROM zawodnik INNER JOIN pozycja
+ON zawodnik.id = pozycja.id
+WHERE zawodnik.id = 3 OR zawodnik.id = 5;
+
+-- kw4
+
+TRUNCATE TABLE rozgrywka;
