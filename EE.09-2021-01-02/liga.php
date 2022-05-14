@@ -47,6 +47,7 @@
 		
 		<ol type="1">
 			<!-- działanie skryptu 1 -->
+			<!-- niestety coś tutaj mi nie chce prawidłowo działać ;c -->
 
 			<?php 
 
