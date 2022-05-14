@@ -6,7 +6,21 @@
 
 }
 
-/* do ligi */
+#liga {
+	color: white;
+	text-align: center;
+	width: 170px;
+	margin: 5px;
+	border: 1px white solid;
+	border-radius: 15px;
+	float: left;
+}
+
+#liga:hover {
+	background-color: white;
+	color: black;
+}
+
 
 #glowny {
 	color: white;
@@ -17,12 +31,14 @@
 	width: 30%;
 	text-align: center;
 	height: 150px;
+	float: left;
 }
 
 #prawy {
 	background-color: whitesmoke;
 	width: 70%;
 	height: 150px;
+	float: right;
 }
 
 body {

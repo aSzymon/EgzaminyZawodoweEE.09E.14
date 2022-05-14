@@ -81,9 +81,31 @@
 
 	</section>
 
-	<section id="liga">
+	<section>
 		
 		<!-- działanie skryptu 2 -->
+
+		<?php
+
+		$query2 = "SELECT zespol, punkty, grupa
+				FROM liga
+				ORDER BY punkty DESC";
+
+		$sql2 = $conn->query($query2);
+
+				while($row2=$sql2->fetch(PDO::FETCH_OBJ)){
+
+				echo "<section id='liga'>";
+
+					echo "<h2>".$row2->zespol."</h2>";
+					echo "<h1>".$row2->punkty."</h1>";
+					echo "<p>grupa: ".$row2->grupa."</p>";
+
+				echo "</section>";
+
+				}
+
+		?>
 
 	</section>
 
