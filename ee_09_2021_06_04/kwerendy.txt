@@ -1,0 +1,27 @@
+-- kw1
+//wybierające jedynie pola id, imie, nazwisko, rok_urodzenia, zdjecie z tabeli osoby.
+Kwerenda wybiera pierwsze 30 wierszy, należy jawnie wskazać liczbę wierszy
+
+SELECT  id,imie,nazwisko,rok_urodzenia,zdjecie
+FROM osoby LIMIT 30;
+
+-- kw2
+//wybierające jedynie pola imie, nazwisko, rok_urodzenia, opis, zdjecie z tabeli osoby
+oraz odpowiadające im pole nazwa z tabeli hobby dla osoby o id równym 10
+
+SELECT imie,nazwisko,rok_urodzenia,opis,zdjecie
+FROM osoby INNER JOIN hobby 
+ON osoby.Hobby_id = hobby.id 
+WHERE osoby.id = 10;
+
+-- kw3
+//liczące średni rok urodzenia oraz najniższy i najwyższy rok urodzenia z tabeli osoby
+
+SELECT AVG(rok_urodzenia), MIN(rok_urodzenia), MAX(rok_urodzenia)
+FROM osoby;
+
+-- kw4
+aktualizujące pole opis z tabeli osoby dla osób, których pole Hobby_id jest równe 4.
+Wartość nowego wpisu w polu opis jest dowolna będąca możliwym hobby
+
+UPDATE osoby SET opis="nowy wpis" WHERE Hobby_id = 4;
