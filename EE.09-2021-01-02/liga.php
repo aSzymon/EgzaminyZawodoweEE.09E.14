@@ -27,10 +27,10 @@
 		<form method="POST" action="liga.php">
 			
 			<select name="listaWybor">
-				<option>Bramkarze</option>
-				<option>Obrońcy</option>
-				<option>Pomocnicy</option>
-				<option>Napastnicy</option>
+				<option value="1">Bramkarze</option>
+				<option value="2">Obrońcy</option>
+				<option value="3">Pomocnicy</option>
+				<option value="4">Napastnicy</option>
 			</select>
 
 			<input type="submit" name="przycisk" value="Zobacz">
@@ -46,16 +46,14 @@
 	<section id="prawy">
 		
 		<ol type="1">
-			<!-- działanie skryptu 1 -->
-			<!-- niestety coś tutaj mi nie chce prawidłowo działać ;c -->
 
 			<?php 
-
-				$wybor = boolval($_POST['listaWybor']);
+	
+			if (isset($_POST['przycisk'])) {
 
 				$query1 = "SELECT imie,nazwisko
 						FROM zawodnik
-						WHERE id = ".$wybor;
+						WHERE id = ".$_POST['listaWybor'];
 
 				$sql1 = $conn->query($query1);
 
@@ -69,6 +67,8 @@
 					echo "</li>";
 
 				}
+
+			}
 
 			?>
 
