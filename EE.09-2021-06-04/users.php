@@ -87,6 +87,6 @@
 
 <?php 
 
-    die();
+    $conn = null;
     
  ?>
