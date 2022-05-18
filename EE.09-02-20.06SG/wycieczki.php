@@ -31,8 +31,6 @@
 		
 		<h2>GALERIA</h2>
 
-		<!-- działanie skryptu 1 -->
-
 		<?php 
 
 			$query1 = "SELECT nazwaPliku, podpis
