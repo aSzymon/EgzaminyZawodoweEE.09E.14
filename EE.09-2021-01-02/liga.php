@@ -83,8 +83,6 @@
 	</section>
 
 	<section>
-		
-		<!-- działanie skryptu 2 -->
 
 		<?php
 
