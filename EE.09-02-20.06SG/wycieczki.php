@@ -41,11 +41,9 @@
 
 			$sql1 = $conn->query($query1);
        
-			while($row1=$sql1->fetch()){
+			while($row1=$sql1->fetch(PDO::FETCH_OBJ)){
 
-				 echo "<img src='{$row1['nazwaPliku']}' alt='{$row1['podpis']}'/>";
-
-				// echo "<img src='".$row1->nazwaPliku."' alt='".$row1->podpis."'>";
+				echo "<img src='".$row1->nazwaPliku."' alt='".$row1->podpis."'>";
 
 			}
 
