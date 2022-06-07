@@ -1,0 +1,48 @@
+* {
+	font-family:Helvetica;
+}
+
+#banerLewy, #banerPrawy {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	width: 25%;
+	height: 80px;
+}
+
+#banerSrodkowy {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	width: 50%;
+	height: 80px;
+	text-align: center;
+}
+
+#glowny {
+	background-color: rgb(224, 255, 255);
+	padding: 40px;
+}
+
+#lewy, #prawy {
+	background-color: rgb(70, 130, 180);
+	width: 50%;
+	height: 200px;
+	text-align: center;
+}
+
+#stopka {
+	background-color: rgb(224, 255, 255);
+}
+
+table {
+	border: solid 1px blue;
+}
+
+th {
+	border: solid 1px blue;
+	background-color: blue;
+	color: white;
+}
+
+#banerLewy, #banerPrawy, #banerSrodkowy, #lewy, #prawy {
+	float: left;
+}
