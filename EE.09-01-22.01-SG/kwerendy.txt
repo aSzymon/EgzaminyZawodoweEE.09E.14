@@ -1,0 +1,21 @@
+-- kw1 
+
+INSERT INTO karty_wedkarskie(adres,data_zezwolenia,id,imie,nazwisko,punkty)
+VALUES ("Gdynia, Batorego 14/5","2018-02-23"," ","Grzegorz","Niemczyk","0");
+
+-- kw2
+
+SELECT imie,nazwisko
+FROM karty_wedkarskie
+WHERE punkty > 20;
+
+-- kw3
+
+SELECT lowisko.akwen
+FROM lowisko INNER JOIN zawody_wedkarskie 
+ON lowisko.id = zawody_wedkarskie.Lowisko_id 
+WHERE zawody_wedkarskie.sedzia= "Krzysztof Dobrowolski";
+
+-- kw4
+
+CREATE USER anna IDENTIFIED BY "anna123";
