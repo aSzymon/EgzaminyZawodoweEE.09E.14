@@ -1,0 +1,53 @@
+* {
+	font-family: Helvetica;
+}
+
+#baner {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	height: 30px;
+	text-align: center;
+}
+
+#glowny {
+	background-color: rgb(176, 196, 222);
+	padding: 50px;
+	text-align: center;
+}
+
+#lewy {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	height: 300px;
+	width: 80%;
+	float: left;
+}
+
+#prawy {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	height: 300px;
+	width: 20%;
+	float: left;
+}
+
+#zdj1 {
+	padding: 3px;
+	border: dashed blue 1px;
+}
+
+#zdjLewy {
+	height: 40%;
+}
+
+#zdjLewy:hover {
+	border: solid white 1px;
+}
+
+#stopka {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	text-align: center;
+	height: 30px;
+	clear: both;
+}

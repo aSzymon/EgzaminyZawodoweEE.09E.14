@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Galeria</title>
+	<link rel="stylesheet" type="text/css" href="styl7.css">
+</head>
+<body>
+
+	<section id="baner">
+		
+		<h2>Galeria miejsc ciekawych</h2>
+
+	</section>
+	<section id="glowny">
+		
+		<img id="zdj1" src="lanzarotte.jpg" alt="galeria">
+
+	</section>
+	<section id="lewy">
+			
+		<h3>Przeglądaj zdjęcia</h3>
+
+		<img id="zdjLewy" id="zdj2" src="lanzarotte.jpg" alt="lanzarotte">
+		<img id="zdjLewy" id="zdj3" src="pekin.jpg" alt="pekin">
+		<img id="zdjLewy" id="zdj4" src="serengeti.jpg" alt="serengeti">
+		<img id="zdjLewy" id="zdj5" src="tajlandia.jpg" alt="tajlandia">
+
+	</section>
+	<section id="prawy">
+		
+		<h3>Obraz w naszej galerii</h3>
+
+		<table>
+			
+			<tr>
+				
+				<td>Europa</td>
+				<td>Azja</td>
+				<td>Afryka</td>
+
+			</tr>
+
+			<tr>
+				
+				<td>2</td>
+				<td>2</td>
+				<td>1</td>
+
+			</tr>
+
+		</table>
+
+		<p>Polub nas</p>
+
+		<img src="icon-off.png">
+
+		<a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+
+	</section>
+	<section id="stopka">
+		
+		Autor: 00000000000
+
+	</section>
+
+</body>
+	<script type="text/javascript">
+		
+var zdj1 = document.getElementsByTagName("img")[0];
+var zdj2 = document.getElementsByTagName("img")[1];
+var zdj3 = document.getElementsByTagName("img")[2];
+var zdj4 = document.getElementsByTagName("img")[3];
+var zdj5 = document.getElementsByTagName("img")[4];
+
+zdj2.addEventListener("click", function(){
+
+	zdj1.setAttribute("src","lanzarotte.jpg");
+
+})
+
+zdj3.addEventListener("click", function(){
+
+	zdj1.setAttribute("src","pekin.jpg");
+
+})
+
+zdj4.addEventListener("click", function(){
+
+	zdj1.setAttribute("src","serengeti.jpg");
+
+})
+
+zdj5.addEventListener("click",function(){
+
+	zdj1.setAttribute("src","tajlandia.jpg");
+
+})
+
+	</script>
+</html>
+
